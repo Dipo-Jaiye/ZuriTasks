@@ -28,13 +28,13 @@ get('http://jsonplaceholder.typicode.com/posts', (res) => {
   res.on('end', () => {
     try {
       console.log("Data from posts has been received!\n");
-      const resPath = "./result";
-      mkdir(resPath,{recursive:true})
+      const resPath = "./result"; //directory file to save the posts
+      mkdir(resPath,{recursive:true}) //recursive true to ensure it doesn't give error if the dir already exists
       .then(data => {
-          console.log("Dir made!");
-          return writeFile(resPath + "/posts.json", jsonData);
+          console.log("Dir made!"); //promise format to make sure to write the file
+          return writeFile(resPath + "/posts.json", jsonData);  //after dir exists
         })
-      .catch(err => {console.log(`Error making directory: ${err.message}`)})
+      .catch(err => {console.log(`Error making directory: ${err.message}`)}) 
       .then(()=>console.log("File created successfully"))
       .catch(err => console.log(`Error saving file: ${err.message}`));     
     } catch (e) {
