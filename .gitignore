@@ -1,4 +1,7 @@
 .vscode
 *.docx
+npm-debug.log
+.DS_Store
+/*.env
 /tutoringApp
 /task3zuriCRUD_API
