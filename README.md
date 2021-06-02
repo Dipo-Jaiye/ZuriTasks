@@ -14,3 +14,6 @@ a json response of your name, location and hobby, and serve an html webpage.
 
 ## [Backend Javascript task 3](https://github.com/Dipo-Jaiye/ZuriSimpleCRUD_API)
 Create a simple API and host it on Heroku.  
+
+## [Makeup General Task](https://github.com/Dipo-Jaiye/ZuriTasks/blob/main/Zuri%20General%20Feedback%20task.txt)
+Give feedback on the training experience
